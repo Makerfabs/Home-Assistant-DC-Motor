@@ -1,0 +1,19 @@
+output:
+  - platform: ledc
+    id: motor_reverse_pin
+    pin: 25
+
+  - platform: ledc
+    id: motor_forward_pin
+    pin: 26
+
+
+
+fan:
+  - platform: hbridge
+    id: my_fan
+    name: "Living Room Fan"
+    pin_a: motor_forward_pin
+    pin_b: motor_reverse_pin
+    # enable_pin: motor_enable
+    decay_mode: slow   # slow decay mode (braking) or fast decay (coasting)
