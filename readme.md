@@ -2,11 +2,11 @@
 
 ```c++
 /*
-Version:        V1.0
+Version:        V1.1
 Author:            Vincent
 Create Date:    2023/9/13
 Note:
-
+    2023/10/23  V1.1: Add Endstop Usage
 */
 ```
 
@@ -19,7 +19,9 @@ Note:
 [Makerfabs Wiki](https://wiki.makerfabs.com/)
 
 ## Intruduce
+
 Product Link:
+
 Wiki Link :
 
 ## Features
@@ -63,7 +65,7 @@ Equipment Setup
 
 8. Copy the code ha-motor.yaml provided by Makerfabs to the end of the file.
 
-![](md_pic/6.jpg)
+![](md_pic/5.jpg)
 
 9. Select SAVE, and select Install.
 10. Select Manual Download, select Modern format, the console page will be displayed, please wait patiently for compilation.
@@ -125,3 +127,17 @@ Normally, HA recognizes this automatically, but if the home page has been manual
 The reference interface is as follows:
 
 ![](md_pic/21.jpg)
+
+
+# HA Automation
+
+Two new Endstop pads are added to connect the external Endstop.
+
+![](md_pic/23.jpg)
+
+For example, if you want Endstop 1 to be triggered, turn off the motor, you can see the following Settings.
+On the configuration page, select Automation.
+Select Create Automation and set trigger conditions and motors.
+
+![](md_pic/22.jpg)
+
